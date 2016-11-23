@@ -1,0 +1,131 @@
+<!--<div class="breadcrumbs" id="breadcrumbs">
+    <ul class="breadcrumb">
+        <li>
+            <a href="#">Mis Proyectos</a>
+        </li>
+        <li class="active">Nuevo proyecto</li>
+    </ul>
+</div>
+-->
+<div class="page-content">
+    <div class="row">
+        <div class="space-6"></div>
+        <div class="col-sm-6 col-sm-offset-1">
+            <div id="login-box" class="login-box visible widget-box no-border">
+                <div class="widget-body">
+                    <div class="widget-main">
+                        <h4 class="header blue lighter bigger">
+                            Ingrese los datos del proyecto
+                        </h4>
+                        <br/>
+                        <form name="proyectoForm" class="form-horizontal" role="form">
+                            
+
+                            <!-- campo  userID -->
+                            <div class="hide">
+                                <label class="col-sm-5 control-label no-padding-right" for="phone">ID</label>
+                                <div class="col-sm-7">
+                                    <span class="block input-icon input-icon-right">
+                                <input type="text" class="form-control" placeholder="{{uid}}" name="phone" ng-model="project.uid"/>
+                            </span>
+                                </div>
+                            </div>
+                            <!-- campo  email -->
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label no-padding-right" for="email">Email</label>
+                                <div class="col-sm-7">
+                                    <span class="block input-icon input-icon-right">
+                                        <input type="text" class="form-control" placeholder="{{email}}" name="email" ng-model="project.email" focus/>
+                                        <span ng-show="signupForm.email.$error.email" class="help-inline">Ingrese un correo valido!</span> 
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- campo  telefono -->
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label no-padding-right" for="phone">Teléfono</label>
+                                <div class="col-sm-7">
+                                    <span class="block input-icon input-icon-right">
+                                <input type="text" class="form-control" placeholder="Teléfono" name="phone" ng-model="project.phone"/>
+                            </span>
+                                </div>
+                            </div>
+                            <!-- campo  tema -->
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label no-padding-right" for="tema">Tema</label>
+                                <div class="col-sm-7">
+                                    <span class="block input-icon input-icon-right">
+
+                                <select class="form-control" name="tema" id="tema">
+                            
+                                            <optgroup label="Colocación, reparación, mantenimiento de Obras Públicas">
+                                                <option value="">Bacheo - Pavimentación - Asfalto</option>
+                                                <option value="">Semáforos (colocación y reparación).</option>
+                                                <option value="">Plazas (mantenimiento, reparación, equipamiento y construcción).</option>
+                                                <option value="">Veredas (reparación).</option>
+                                                <option value="">Señalización vial y cartelería (colocación, reparación y mantenimiento).</option>
+                                                <option value="">Zanja (construcción y mantenimiento)</option>
+                                                <option value="">Boca de tormentas (colocación, reparación y mantenimiento).</option>
+                                                <option value="">Instalación de Luminarias.</option>
+                                                <option value="">Corte de transito.</option>
+                                            </optgroup>
+                                            <optgroup label="excepción al Reglamento de Edificación y/o Código Urbano">
+                                                <option value="">Temas a tramitar via web correspondientes a la Comisión de Planeamiento</option>
+                                                <option value="">project6.xml</option>
+                                                <optgroup label="client2_a">
+                                                    <option value="" style="margin-left:23px;">project7.xml</option>
+                                                    <option value="" style="margin-left:23px;">project8.xml</option>
+                                                </optgroup>
+                                                <option value="">project3.xml</option>
+                                                <option value="">project4.xml</option>
+                                           </optgroup>
+                                           <optgroup label="Inclusión en el padrón de jubilados (ordenanza 4846)">
+                                               <option value="">project0.xml</option>
+                                               <option value="">project1.xml</option>
+                                           </optgroup>
+                                          
+                                </select>
+                            </span>
+                                </div>
+                            </div>
+
+                            <!-- campo  Direccion -->
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label no-padding-right" for="address">Dirección</label>
+                                <div class="col-sm-7">
+                                    <span class="block input-icon input-icon-right">
+                                <input type="text" class="form-control" placeholder="Dirección exacta" ng-model="project.address" />
+                            </span>
+                                </div>
+                            </div>
+                            <!-- campo  Comentario -->
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label no-padding-right" for="comentario">Comentarios</label>
+                                <div class="col-sm-7">
+                                    <span class="block input-icon input-icon-right">
+                                <textarea type="textarea" class="form-control" placeholder="" ng-model="project.comment" /></textarea>
+                            </span>
+                                </div>
+                            </div>
+                            <!-- Boton enviar -->
+                            <div class="form-group">
+                                <span class="lbl col-sm-5"> </span>
+                                <div class="col-sm-7">
+                                    <button type="submit" class="width-35 pull-right btn btn-sm btn-primary" ng-click="saveProject()" data-ng-disabled="signupForm.$invalid">
+                                        Enviar
+                                    </button>
+                                </div>
+                            </div>
+                            </fieldset>
+                            <span class="lbl col-sm-5"> </span>
+                            <a href="#/dashboard">Volver</a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- /.page-content -->
