@@ -1,9 +1,11 @@
-app.controller('projectCtrl', function ($scope, $http, $location ) {
+app.controller('projectCtrl', ['$scope', 'loginService'],  function ($scope, loginService ) {
 	$scope.saveProject = function () {
-		$http.post('api/v1/resourceproject.php', $scope.project, {cache:true}).success(function (){
-			$location.path('dashboard')
+		var userData = {
+			name: $scope.name
+			/* .. y completas el user data con la info q necesitas */
+		} 
 
-		});
+		loginService.save(userData);
 	};
    
 	
