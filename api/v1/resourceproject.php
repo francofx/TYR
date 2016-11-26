@@ -13,6 +13,9 @@ if (mysqli_connect_errno()) {
 $postdata = file_get_contents("php://input");
 $request = json_decode($postdata, false);
 
+var_dump($request);
+
+$uid = $request->uid;
 $name = $request->name;
 $email = $request->email;
 $phone = $request->phone;
@@ -20,8 +23,8 @@ $address = $request->address;
 $comment = $request->comment;
 
 
-$rawSQL = "INSERT INTO project (pname, pemail, pphone, paddress, pcomment, pdatecreate)
-VALUES ( '$name', '$email', '$phone', '$address', '$comment', now())";
+$rawSQL = "INSERT INTO project (uid, pname, pemail, pphone, paddress, pcomment, pdatecreate)
+VALUES ( '$uid', '$name', '$email', '$phone', '$address', '$comment', now())";
 
 var_dump($rawSQL);
 

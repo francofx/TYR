@@ -1,13 +1,13 @@
 # ************************************************************
 # Sequel Pro SQL dump
-# Versión 4541
+# VersiÛn 4541
 #
 # http://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.5.42)
 # Base de datos: angularcode
-# Tiempo de Generación: 2016-11-21 16:23:08 +0000
+# Tiempo de GeneraciÛn: 2016-11-26 18:09:53 +0000
 # ************************************************************
 
 
@@ -53,9 +53,55 @@ VALUES
 	(187,'Franco','fpalossi@gmail.com','Palossi','$2a$10$8a5ada9f640456f6c6ae9uQ32f/Hkm1TPhbooqSAsrF0n98q7IbeS','Brown','','2016-11-18 08:41:48'),
 	(188,'Ciro','ciro@gmail.com','123','$2a$10$6211aa99f859ec77f5663O2xllL1P6n45P8dj1RumukOe.KOmFnou','Brown','','2016-11-18 09:14:02'),
 	(189,'f','f@f.com','f','$2a$10$1549f287ba993dc19b113etF6ncXG22Y/3GJ0u2QEIjERoiB25St.','f','','2016-11-18 15:38:43'),
-	(190,'a','emilce@g.com','a','$2a$10$0f8325ec085eaa95ff441Oz/Jsn/Pcw/y.owWhEJM0DfKnQfnPW8i','a','','2016-11-18 15:40:07');
+	(190,'a','emilce@g.com','a','$2a$10$0f8325ec085eaa95ff441Oz/Jsn/Pcw/y.owWhEJM0DfKnQfnPW8i','a','','2016-11-18 15:40:07'),
+	(191,'franco','f@gmail.com','34543543','$2a$10$ba7e042e7f210888187b7uuULDBFo.bsFr7FTNjcxM3YcyG2hT0/S','yyyyyyyy','','2016-11-23 11:06:10'),
+	(192,'Ciro','f@f.c','345986','$2a$10$ad4903b629f62ae06d038udiB62IejEfHZnsEnO4pS.QMOFx.A.JW','lol','','2016-11-23 11:07:01');
 
 /*!40000 ALTER TABLE `customers_auth` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Volcado de tabla project
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `project`;
+
+CREATE TABLE `project` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` int(11) DEFAULT NULL,
+  `pname` varchar(200) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `pemail` varchar(250) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `pphone` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `ptheme` varchar(400) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `paddress` varchar(300) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `pcomment` varchar(550) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `pdatecreate` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+LOCK TABLES `project` WRITE;
+/*!40000 ALTER TABLE `project` DISABLE KEYS */;
+
+INSERT INTO `project` (`id`, `uid`, `pname`, `pemail`, `pphone`, `ptheme`, `paddress`, `pcomment`, `pdatecreate`)
+VALUES
+	(4,NULL,NULL,NULL,'123231',NULL,'jsjsjs','dsfjdsf',NULL),
+	(5,NULL,'','','fdfds',NULL,'dde','xewcwecew','2016-11-22'),
+	(6,NULL,'','','fdfds',NULL,'dde','xewcwecew','2016-11-22'),
+	(7,NULL,'','','fdfds',NULL,'dde','sdfsdf','2016-11-22'),
+	(8,NULL,'','','4828739',NULL,'Brown 2027','Este es un comentario','2016-11-22'),
+	(9,NULL,'','','',NULL,'','sdfsdf','2016-11-22'),
+	(10,NULL,'','','',NULL,'','dfdsfff','2016-11-22'),
+	(11,NULL,'','','',NULL,'','hola','2016-11-22'),
+	(12,NULL,'','','',NULL,'','fdsfds','2016-11-22'),
+	(13,NULL,'','','',NULL,'','sdfdsf','2016-11-22'),
+	(14,NULL,'','','',NULL,'','123','2016-11-22'),
+	(15,NULL,'','','',NULL,'','123','2016-11-22'),
+	(16,NULL,'','','',NULL,'','holllll','2016-11-22'),
+	(17,NULL,'','','35543',NULL,'moreno 2033','no hay','2016-11-22'),
+	(18,NULL,'','','',NULL,'','','2016-11-22'),
+	(19,NULL,'','','123',NULL,'dd','iiiii','2016-11-23');
+
+/*!40000 ALTER TABLE `project` ENABLE KEYS */;
 UNLOCK TABLES;
 
 

@@ -1,12 +1,4 @@
-<!--<div class="breadcrumbs" id="breadcrumbs">
-    <ul class="breadcrumb">
-        <li>
-            <a href="#">Mis Proyectos</a>
-        </li>
-        <li class="active">Nuevo proyecto</li>
-    </ul>
-</div>
--->
+
 <div class="page-content">
     <div class="row">
         <div class="space-6"></div>
@@ -14,25 +6,26 @@
             <div id="login-box" class="login-box visible widget-box no-border">
                 <div class="widget-body">
                     <div class="widget-main">
-                        <h4 class="header blue lighter bigger">
-                            Ingrese los datos del proyecto
-                        </h4>
+                        <h3 class="header blue lighter bigger">
+                            Ingrese los datos del tramite o reclamo
+                        </h3>
                         <br/>
-                        <form name="proyectoForm" class="form-horizontal" role="form">
+    <form name="proyectoForm" class="form-horizontal" role="form">
                             
 
                             <!-- campo  userID -->
-                            <div class="hide">
-                                <label class="col-sm-5 control-label no-padding-right" for="phone">ID</label>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label no-padding-right" for="uid">ID</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
-                                <input type="text" class="form-control" placeholder="{{uid}}" name="phone" ng-model="project.uid"/>
+                                <input type="text" class="form-control" placeholder="{{uid}}" name="uid" ng-model="project.uid" ng-value="" />
                             </span>
                                 </div>
                             </div>
+
                             <!-- campo  email -->
                             <div class="form-group">
-                                <label class="col-sm-5 control-label no-padding-right" for="email">Email</label>
+                                <label class="col-sm-5 control-label no-padding-right" for="email">Correo electronico</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
                                         <input type="text" class="form-control" placeholder="{{email}}" name="email" ng-model="project.email" focus/>
@@ -42,10 +35,10 @@
                             </div>
                             <!-- campo  telefono -->
                             <div class="form-group">
-                                <label class="col-sm-5 control-label no-padding-right" for="phone">Teléfono</label>
+                                <label class="col-sm-5 control-label no-padding-right" for="phone">Teléfono (fijo o celular)</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
-                                <input type="text" class="form-control" placeholder="Teléfono" name="phone" ng-model="project.phone"/>
+                                <input type="text" class="form-control" placeholder="{{phone}}" name="phone" ng-model="project.phone"/>
                             </span>
                                 </div>
                             </div>
@@ -99,7 +92,7 @@
                             </div>
                             <!-- campo  Comentario -->
                             <div class="form-group">
-                                <label class="col-sm-5 control-label no-padding-right" for="comentario">Comentarios</label>
+                                <label class="col-sm-5 control-label no-padding-right" for="comentario">Detalle el tramite</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
                                 <textarea type="textarea" class="form-control" placeholder="" ng-model="project.comment" /></textarea>
@@ -116,10 +109,10 @@
                                 </div>
                             </div>
                             </fieldset>
-                            <span class="lbl col-sm-5"> </span>
-                            <a href="#/dashboard">Volver</a>
+                            
+                            <h3><a href="#/dashboard">Volver</a></h3>
                             </div>
-                        </form>
+    </form>
 
                     </div>
                 </div>

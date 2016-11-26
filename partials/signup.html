@@ -1,7 +1,7 @@
 <div class="breadcrumbs" id="breadcrumbs">
     <ul class="breadcrumb">
         <li>
-            <a href="#">Mis Proyectos</a>
+            <a href="#">Tramites y reclamos</a>
         </li>
         <li class="active">Nuevo usuario</li>
     </ul>
@@ -13,13 +13,13 @@
             <div id="login-box" class="login-box visible widget-box no-border">
                 <div class="widget-body">
                     <div class="widget-main">
-                        <h4 class="header blue lighter bigger">
-                            Registrate en MisProyectos!
-                        </h4>
+                        <h3 class="header blue lighter bigger">
+                            Registrate!
+                        </h3>
                         <br/>
                         <form name="signupForm" class="form-horizontal" role="form">
                             <div class="form-group">
-                                <label class="col-sm-5 control-label no-padding-right" for="email">Email</label>
+                                <label class="col-sm-5 control-label no-padding-right" for="email">Correo electronico</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
                                         <input type="text" class="form-control" placeholder="Email" name="email" ng-model="signup.email" focus/>
@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-5 control-label no-padding-right" for="name">Nombre</label>
+                                <label class="col-sm-5 control-label no-padding-right" for="name">Nombre y Apellido</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
                                 <input type="text" class="form-control" placeholder="Nombre" ng-model="signup.name" />
@@ -57,7 +57,15 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-5 control-label no-padding-right" for="phone">Teléfono</label>
+                                <label class="col-sm-5 control-label no-padding-right" for="name">DNI</label>
+                                <div class="col-sm-7">
+                                    <span class="block input-icon input-icon-right">
+                                <input type="text" class="form-control" placeholder="DNI" ng-model="signup.dni" />
+                            </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label no-padding-right" for="phone">Teléfono (fijo o celular)</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
                                 <input type="text" class="form-control" placeholder="Teléfono" name="phone" ng-model="signup.phone"/>
