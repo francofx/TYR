@@ -3,10 +3,10 @@ app.controller('projectCtrl', ['$scope', 'reclamosServices', function ($scope, r
 		var userData = {
 			uid: $scope.uid,
 			name: $scope.name,
-			email: $scope.emal,
-			phone: $scope.phone,
-			address: $scope.address,
-			comment: $scope.comment
+			email: $scope.email,
+			phone: $scope.project.phone,
+			address: $scope.project.address,
+			comment: $scope.project.comment
 		} 
 
 		reclamosServices.save(userData);
