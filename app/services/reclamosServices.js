@@ -2,7 +2,7 @@
  * Service to handle the login communications to the API
  */
 app.service(
-    "projectService",
+    "reclamosServices",
     function ($http, $q, $config) {
         return {
             save: function (userData) {
