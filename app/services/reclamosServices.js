@@ -3,7 +3,7 @@
  */
 app.service(
     "reclamosServices",
-    function ($http, $q, $config) {
+    function ($http, $q) {
         return {
             save: function (userData) {
 	            $http({
