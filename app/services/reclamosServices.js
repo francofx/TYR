@@ -6,6 +6,9 @@ app.service(
     function ($http, $q) {
         return {
             save: function (userData) {
+
+                var deferred = $q.defer();
+
 	            $http({
 	                method: 'POST',
 	                url: 'api/v1/resourceproject.php',
@@ -22,6 +25,9 @@ app.service(
 	            }).error(function (data) {
 	            	//hago algo con el erroro aca
            		});
+
+                return deferred.promise;
+
 	        }
         }
     }
