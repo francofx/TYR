@@ -1,4 +1,4 @@
-app.controller('projectCtrl', ['$scope', 'loginService'],  function ($scope, loginService ) {
+app.controller('projectCtrl', ['$scope', 'loginService', function ($scope, loginService ) {
 	$scope.saveProject = function () {
 		var userData = {
 			name: $scope.name
@@ -9,5 +9,5 @@ app.controller('projectCtrl', ['$scope', 'loginService'],  function ($scope, log
 	};
    
 	
-});
+}]);
 
