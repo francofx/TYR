@@ -13,8 +13,6 @@ if (mysqli_connect_errno()) {
 $postdata = file_get_contents("php://input");
 $request = json_decode($postdata, false);
 
-var_dump($request);
-
 $uid = $request->uid;
 $name = $request->name;
 $email = $request->email;
