@@ -6,7 +6,6 @@ app.service(
     function ($http, $q) {
         return {
             save: function (userData) {
-
                 var deferred = $q.defer();
 
 	            $http({
@@ -16,10 +15,8 @@ app.service(
 	                  //si necesitas mandas headers tambien  
 	                },
 	                data: userData
-
 	            })
 	            .success(function (data) {
-	                
 	                 //hago algo si todo va bien, por defecto, resuevlo el deferred object 
 	                deferred.resolve(data);
 	            }).error(function (data) {
@@ -27,7 +24,6 @@ app.service(
            		});
 
                 return deferred.promise;
-
 	        }
         }
     }

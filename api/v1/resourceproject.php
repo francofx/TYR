@@ -1,7 +1,7 @@
 <?php
 
 include_once '../config.php';
-
+include_once 'post.php';
 // Connecting to mysql database
 $conn = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
@@ -30,5 +30,26 @@ $result = $conn->query($rawSQL);
 if (!empty($conn->error)) {
     die($conn->error);
 }
+
+//POST para los chabones de mesa de entrada
+/**
+    "descripcion": "",
+    "apellido": "",
+    "nombre": "",
+    "dni": null,
+    "telefono": "",
+    "email": "",
+    "domicilio": "",
+    "causante": "",
+    "fecha_rechazo": null,
+    "fecha_aceptacion": null
+    */
+httpPost('http://200.80.240.114:8000/asunto/', [
+    "descripcion" => $request->comment,
+    "nombre" => $_SESSION['nombre']
+]);
+//aca tendrias q devolver un json con un mensaje si todo va bien fran. pero ahora esta llegando toda la info bien
+
+
 
 ?>

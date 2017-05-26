@@ -32,6 +32,7 @@ $app->post('/login', function() use ($app) {
         $_SESSION['uid'] = $user['uid'];
         $_SESSION['email'] = $email;
         $_SESSION['name'] = $user['name'];
+        $_SESSION['lastName'] = $user['lastname'];
         } else {
             $response['status'] = "error";
             $response['message'] = 'Error de inicio de sesion. credenciales incorrectas';
