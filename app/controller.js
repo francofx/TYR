@@ -1,11 +1,17 @@
-app.controller('projectCtrl', function ($scope, $http, $location ) {
+app.controller('projectCtrl', ['$scope', 'reclamosServices', function ($scope, reclamosServices ) {
 	$scope.saveProject = function () {
-		$http.post('api/v1/resourceproject.php', $scope.project, {cache:true}).success(function (){
-			$location.path('dashboard')
+		var userData = {
+			uid: $scope.uid,
+			name: $scope.name,
+			email: $scope.email,
+			phone: $scope.project.phone,
+			address: $scope.project.address,
+			comment: $scope.project.comment
+		} 
 
-		});
+		reclamosServices.save(userData);
 	};
    
 	
-});
+}]);
 
