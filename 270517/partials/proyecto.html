@@ -1,4 +1,3 @@
-
 <div class="page-content">
     <div class="row">
         <div class="space-6"></div>
@@ -7,7 +6,7 @@
                 <div class="widget-body">
                     <div class="widget-main">
                         <h3 class="header blue lighter bigger">
-                            Ingrese los datos de la Iniciativa
+                            Ingrese los datos del tramite
                         </h3>
                         <br/>
     <form name="proyectoForm" class="form-horizontal" role="form">
@@ -28,7 +27,7 @@
                                 <label class="col-sm-5 control-label no-padding-right" for="email">Correo electronico</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
-                                        <input type="text" class="form-control" placeholder="{{email}}" name="email" ng-model="project.email" focus/>
+                                        <input type="text" class="form-control" name="email" ng-model="project.email" focus/>
                                         <span ng-show="signupForm.email.$error.email" class="help-inline">Ingrese un correo valido!</span> 
                                     </span>
                                 </div>
@@ -47,7 +46,8 @@
                                 <label class="col-sm-5 control-label no-padding-right" for="tema">Tema</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
-                                     <select class="form-control" name="theme" id="theme" ng-model="project.theme">
+
+                                <select class="form-control" name="theme" id="theme" ng-model="project.theme">
                             
                                             <optgroup label="Obras Públicas">
                                                 <option value="Bacheo">Bacheo - Pavimentación - Asfalto</option>
@@ -78,10 +78,8 @@
                                                 <option value="Desagotamiento de pozos ciegos">Desagotamiento de pozos ciegos</option>
                                            </optgroup>
                                           
-                                     </select>
-
-                                
-                                    </span>
+                                </select>
+                            </span>
                                 </div>
                             </div>
 
