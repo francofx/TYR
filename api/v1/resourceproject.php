@@ -24,11 +24,15 @@ $comment = $request->comment;
 $rawSQL = "INSERT INTO project (uid, pname, pemail, pphone, paddress, pcomment, pdatecreate)
 VALUES ( '$uid', '$name', '$email', '$phone', '$address', '$comment', now())";
 
-var_dump($rawSQL);
+header("Content-type:application/json");
 
 $result = $conn->query($rawSQL);
 if (!empty($conn->error)) {
     die($conn->error);
 }
+
+$selectLastSql = "select * from project where uid = '$uid' order by id desc";
+$result = $conn->query($selectLastSql);
+echo json_encode($result);
 
 ?>
