@@ -89,4 +89,14 @@ $app->get('/logout', function() {
     $response["message"] = "Hasta luego!";
     echoResponse(200, $response);
 });
+
+//mensaje al envirar form
+$app->get('/saveProject', function() {
+    $db = new DbHandler();
+    $session = $db->destroySession();
+    $response["status"] = "info";
+    $response["message"] = "Propuesta enviada!";
+    echoResponse(200, $response);
+});
+
 ?>

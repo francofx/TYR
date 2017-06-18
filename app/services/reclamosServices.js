@@ -20,7 +20,7 @@ app.service(
 	            })
 	            .success(function (data) {
 	                
-	                 //hago algo si todo va bien, por defecto, resuevlo el deferred object 
+	                 //hago algo si todo va bien, por defecto, resuelvo el deferred object 
 	                 //debugger;
 	                 var alldata = arguments[3].data;
 	                 
@@ -31,7 +31,7 @@ app.service(
 	                  //si necesitas mandas headers tambien  
 	                },
 	                data: {
-						        "id": 1,
+						        //"id": 1,
 						        "descripcion": "asunto 1",
 						        "apellido": "Colella",
 						        "nombre": "Eloy",

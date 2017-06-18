@@ -5,6 +5,7 @@ app.controller('projectCtrl', ['$scope', 'reclamosServices', function ($scope, r
 			name: $scope.name,
 			email: $scope.email,
 			phone: $scope.project.phone,
+			theme: $scope.project.theme,
 			address: $scope.project.address,
 			comment: $scope.project.comment
 		} 

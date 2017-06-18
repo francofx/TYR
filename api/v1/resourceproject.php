@@ -17,12 +17,13 @@ $uid = $request->uid;
 $name = $request->name;
 $email = $request->email;
 $phone = $request->phone;
+$theme = $request->theme;
 $address = $request->address;
 $comment = $request->comment;
 
 
-$rawSQL = "INSERT INTO project (uid, pname, pemail, pphone, paddress, pcomment, pdatecreate)
-VALUES ( '$uid', '$name', '$email', '$phone', '$address', '$comment', now())";
+$rawSQL = "INSERT INTO project (uid, pname, pemail, pphone, ptheme, paddress, pcomment, pdatecreate)
+VALUES ( '$uid', '$name', '$email', '$phone','$theme', '$address', '$comment', now())";
 
 header("Content-type:application/json");
 

@@ -1,1 +1,51 @@
 Esto es una prueba
+
+
+{
+        "id": 1,
+        "descripcion": "asunto 1",
+        "apellido": "Colella",
+        "nombre": "Eloy",
+        "dni": 33852292,
+        "telefono": "3364541000",
+        "email": "eloycolella@gmail.com",
+        "domicilio": "Alem 1333 4-4",
+        "causante": "Causante 1",
+        "tipo_rechazo": null,
+        "fecha_rechazo": null,
+        "fecha_aceptacion": "2017-05-30",
+        "fecha_alta": "2017-05-30"
+    },
+
+
+    
+
+    correo
+    telefono
+    tema
+    direccion
+    detalle
+
+    apellido 
+    nombre
+    dni
+
+
+"email": "",
+
+
+"descripcion": "asunto 1",
+"apellido": "Colella",
+"nombre": "Eloy",
+"dni": 33852292,
+"telefono": "3364541000",
+
+"domicilio": "Alem 1333 4-4",
+"causante": "Causante 1",
+"tipo_rechazo": null,
+"fecha_rechazo": null,
+"fecha_aceptacion": "2017-05-30",
+"fecha_alta": "2017-05-30"
+
+
+
