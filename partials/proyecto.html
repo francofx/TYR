@@ -7,21 +7,21 @@
                 <div class="widget-body">
                     <div class="widget-main">
                         <h3 class="header blue lighter bigger">
-                            Ingrese los datos de la Iniciativa
+                            Ingrese los datos del tramite
                         </h3>
                         <br/>
     <form name="proyectoForm" class="form-horizontal" role="form">
-                            
 
-                            <!-- campo  userID -->
+
+                            <!-- campo  userID
                             <div class="form-group">
                                 <label class="col-sm-5 control-label no-padding-right" for="uid">ID</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
-                                <input type="text" class="form-control" placeholder="{{uid}}" name="uid" ng-model="project.uid" ng-value="" />
+                                <input type="hidden" class="form-control" placeholder="{{uid}}" name="uid" ng-model="project.uid" ng-value="" />
                             </span>
                                 </div>
-                            </div>
+                            </div>-->
 
                             <!-- campo  email -->
                             <div class="form-group">
@@ -29,7 +29,7 @@
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
                                         <input type="text" class="form-control" placeholder="{{email}}" name="email" ng-model="project.email" focus/>
-                                        <span ng-show="signupForm.email.$error.email" class="help-inline">Ingrese un correo valido!</span> 
+                                        <span ng-show="signupForm.email.$error.email" class="help-inline">Ingrese un correo valido!</span>
                                     </span>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                 <label class="col-sm-5 control-label no-padding-right" for="phone">Teléfono (fijo o celular)</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
-                                <input type="text" class="form-control" placeholder="{{phone}}" name="phone" ng-model="project.phone"/>
+                                <input type="text" class="form-control" placeholder="{{phone}}" name="phone" ng-model="project.phone" required/>
                             </span>
                                 </div>
                             </div>
@@ -48,22 +48,21 @@
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
                                      <select class="form-control" name="theme" id="theme" ng-model="project.theme">
-                            
-                                            <optgroup label="Obras Públicas">
+
+                                           <optgroup label="Obras Públicas">
                                                 <option value="Bacheo">Bacheo - Pavimentación - Asfalto</option>
                                                 <option value="Semaforos">Semáforos (colocación y reparación)</option>
                                                 <option value="Plazas">Plazas (mantenimiento, reparación, equipamiento y construcción)</option>
                                                 <option value="Veredas">Veredas (reparación)</option>
-                                                <option value="Señalización vial y carteleria">Señalización vial y cartelería (colocación, reparación y mantenimiento)</option>
+                                                <option value="Carteleria vial">Señalización vial y cartelería (colocación, reparación y mantenimiento)</option>
                                                 <option value="Zanja">Zanja (construcción y mantenimiento)</option>
                                                 <option value="Boca de tormentas">Boca de tormentas (colocación, reparación y mantenimiento)</option>
                                                 <option value="Instalacion de Luminarias">Instalación de Luminarias</option>
                                                 <option value="Corte de transito">Corte de transito</option>
                                                 <option value="Desmalezamiento">Desmalezamiento</option>
                                                 <option value="vehiculo">Retiro de vahiculo abandonado en la via pública</option>
-
-                                            </optgroup>
-                                            <optgroup label="Ecologia">
+                                           </optgroup>
+                                           <optgroup label="Ecologia">
                                                 <option value="Poda y escamonda de arboles">Poda y escamonda de arboles</option>
                                            </optgroup>
                                            <optgroup label="Servicios Publicos">
@@ -74,15 +73,13 @@
                                                <option value="Luminaria">Luminaria (colocación, reparacion y mantenimiento)</option>
                                                <option value="cloacas">Desobtrucción, reparación de desagues y bocas de tormenta</option>
                                            </optgroup>
-                                            <optgroup label="Salud">
+                                           <optgroup label="Salud">
                                                 <option value="Estudio Ambiental">Estudio Ambiental a cargo de asistentes sociales</option>
                                                 <option value="Desagotamiento de pozos ciegos">Desagotamiento de pozos ciegos</option>
                                            </optgroup>
-                                           <option value="otros">Otros</option>
-                                          
-                                     </select>
+                                           <!--<option value="otros">Otros</option>-->
 
-                                
+                                     </select>
                                     </span>
                                 </div>
                             </div>
@@ -92,7 +89,7 @@
                                 <label class="col-sm-5 control-label no-padding-right" for="address">Dirección</label>
                                 <div class="col-sm-7">
                                     <span class="block input-icon input-icon-right">
-                                <input type="text" class="form-control" placeholder="Dirección exacta" ng-model="project.address" />
+                                <input type="text" class="form-control" placeholder="Dirección exacta" ng-model="project.address" required/>
                             </span>
                                 </div>
                             </div>
@@ -115,7 +112,7 @@
                                 </div>
                             </div>
                             </fieldset>
-                            
+
                             <h3><a href="#/dashboard">Volver</a></h3>
                             </div>
     </form>

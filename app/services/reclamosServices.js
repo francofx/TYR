@@ -13,22 +13,24 @@ app.service(
 	                method: 'POST',
 	                url: 'api/v1/resourceproject.php',
 	                headers: {
-	                  //si necesitas mandas headers tambien  
+	                  //si necesitas mandas headers tambien
 	                },
 	                data: userData
 
 	            })
 	            .success(function (data) {
-	                
-	                 //hago algo si todo va bien, por defecto, resuelvo el deferred object 
+
+	                 //hago algo si todo va bien, por defecto, resuelvo el deferred object
 	                 //debugger;
 	                 var alldata = arguments[3].data;
-	                 
+
 	                 $http({
 	                method: 'POST',
-	                url: 'http://200.80.240.114:8000/asunto/crear/',
+	                //url: 'http://200.80.240.114:8000/asunto/crear/',
+                  url: '',
+                  
 	                headers: {
-	                  //si necesitas mandas headers tambien  
+	                  //si necesitas mandas headers tambien
 	                },
 	                data: {
 						        //"id": 1,
